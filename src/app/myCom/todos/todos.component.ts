@@ -40,6 +40,18 @@ export class TodosComponent implements OnInit {
     // for(var i=0;i<this.todos.length;i++){
     //   console.log(this.todos[i])
     // }
+         
   }
+
+  deleteTodo(todo:Todo){
+    console.log(todo);
+    const index = this.todos.indexOf(todo);
+    this.todos.splice(index,1)
+   } 
+  addTodo(todo:Todo){
+    console.log(todo);
+    const index = this.todos.indexOf(todo);
+    this.todos.splice(index,1)
+  }   
 
 }
